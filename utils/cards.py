@@ -66,11 +66,11 @@ def scrape_card_info(driver, By, url):
 
     card_url = driver.find_element(By.XPATH, '//div[contains(@class, "CardModalContent")]')
 
-    card_img = card_url.find_element(By.XPATH, './/div/a/div/div/img').get_attribute('src')
+    card_img_url = card_url.find_element(By.XPATH, './/div/a/div/div/img').get_attribute('src')
     card_title = card_url.find_element(By.XPATH, './/div[2]/h3').text
     card_description = card_url.find_element(By.XPATH, './/div[2]/p[2]').text
 
-    # print(card_img, card_title, card_description, card_link)
+    # print(card_img_url, card_title, card_description, card_link)
 
 
     intro = '📢 New card spotted 📢'
@@ -85,7 +85,7 @@ def scrape_card_info(driver, By, url):
     print(text)
 
     # UPLOAD TO TWITTER
-    # tweet(text, card_img)
+    # tweet(text, card_img_url)
 
     print('done..............', now())    
     print('Closing.........................')
