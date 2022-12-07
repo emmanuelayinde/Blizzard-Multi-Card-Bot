@@ -7,7 +7,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.date import now
-from utils.cardbacks import scrape as cardbacks_scrapper
 from utils.macenaries import scrape as macenaries_scrapper
 from utils.battlegrounds import scrape as battlegrounds_scrapper
 from utils.cards import scrape as cards_scrapper
