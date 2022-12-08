@@ -36,7 +36,6 @@ def scrape(webdriver, Service, chrome_options, WebDriverWait, By, EC):
         with open(path +"/data/battlegrounds.txt") as f:
             if card.get_attribute('href') in f.read():
                 tweeted = True
-                break
         if tweeted:
             continue  
         else: 
@@ -55,14 +54,8 @@ def scrape(webdriver, Service, chrome_options, WebDriverWait, By, EC):
 
 
 def scrape_card_info(driver, By, url):
-    # base_url = 'https://hearthstone.blizzard.com/'
-    # if base_url not in url.get_attribute('href'): 
-    #     return print('Items not the regular item')
-
     card_link = url.get_attribute('href')
     driver.get(card_link)
-
-    # //div[@id='MainCardGrid']/div/div[2]/a/div/div/img
 
     card_url = driver.find_element(By.XPATH, '//div[contains(@class, "CardModalContent")]')
 
@@ -71,7 +64,6 @@ def scrape_card_info(driver, By, url):
     card_description = card_url.find_element(By.XPATH, './/div[2]/p[2]').text
 
     # print(card_img_url, card_title, card_description, card_link)
-
 
     intro = '📢 New card spotted 📢'
 
@@ -85,7 +77,7 @@ def scrape_card_info(driver, By, url):
     print(text)
 
     # UPLOAD TO TWITTER
-    # tweet(text, card_img_url)
+    tweet(text, card_img_url)
 
     print('done..............', now())    
     print('Closing.........................')

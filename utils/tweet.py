@@ -2,7 +2,7 @@ import os
 import requests
 import tweepy
 from dotenv import load_dotenv
-from convert_img import convert_bg
+from utils.convert_img import convert_bg
 
 from utils.date import now
 

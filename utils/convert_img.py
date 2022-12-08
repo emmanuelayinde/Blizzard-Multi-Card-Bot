@@ -1,7 +1,7 @@
 # import PIL module
 from PIL import Image
 import os
-from request_url import download_url
+from utils.request_url import download_url
 
 path = os.getcwd()
 # Back Image
