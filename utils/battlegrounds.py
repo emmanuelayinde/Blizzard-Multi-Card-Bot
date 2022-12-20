@@ -67,12 +67,10 @@ def scrape_card_info(driver, By, url):
 
     intro = '📢 New card spotted 📢'
 
-    total_len = f"{intro}\n\n⚠️ {card_title}\n\n📅 \n\n🌐 {card_link}"
-    print(len(total_len))
-
+    total_len = f"{intro}\n\n🔮 {card_title}\n\n📜 \n\n🌐 {card_link}"
     desc = format_description_text(card_description, len(total_len))
+    text = f"{intro}\n\n🔮 {card_title}\n📜 {desc}\n\n🌐 {card_link}"
 
-    text = f"{intro}\n\n⚠️ {card_title}\n📅 {desc}\n\n🌐 {card_link}"
 
     print(text)
 

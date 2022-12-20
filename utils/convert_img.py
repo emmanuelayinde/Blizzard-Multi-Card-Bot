@@ -11,8 +11,8 @@ bg = 'bg.jpeg'
 def convert_bg(card_url):
     # Download front image to local directory
     card_jpg = download_url(card_url)
-
-    frontImage = Image.open(card_jpg)
+    frontImage = Image.open(card_jpg).resize((325, 400))
+    print('Size...', frontImage.size)
     # Open Background Image
     background = Image.open(bg)
     # Convert image to RGBA
