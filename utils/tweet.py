@@ -34,6 +34,6 @@ def tweet(tweet, media = None):
 def tweet_image(url, message):
     file = convert_bg(url)
     media_file = client.media_upload(filename = file)
-    response = client.update_status(status = message, media_ids = [media_file.media_id_string])
+    # response = client.update_status(status = message, media_ids = [media_file.media_id_string])
     print('Tweeted.................................', now())
-    os.remove(file)
+    # os.remove(file)

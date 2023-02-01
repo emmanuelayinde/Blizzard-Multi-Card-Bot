@@ -161,3 +161,10 @@ https://hearthstone.blizzard.com/mercenaries/64508-lord-jaraxxus
 https://hearthstone.blizzard.com/mercenaries/90029-maiev-shadowsong
 https://hearthstone.blizzard.com/mercenaries/70938-malfurion-stormrage
 https://hearthstone.blizzard.com/mercenaries/70777-mannoroth
+https://hearthstone.blizzard.com/mercenaries/64567-medivh
+https://hearthstone.blizzard.com/mercenaries/79822-mr-smite
+https://hearthstone.blizzard.com/mercenaries/95986-murloc-holmes
+https://hearthstone.blizzard.com/mercenaries/83993-niuzao
+https://hearthstone.blizzard.com/mercenaries/92555-prince-malchezaar
+https://hearthstone.blizzard.com/mercenaries/64584-ragnaros
+https://hearthstone.blizzard.com/mercenaries/94020-rattlegore

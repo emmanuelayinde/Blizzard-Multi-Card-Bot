@@ -5,13 +5,16 @@ from utils.request_url import download_url
 
 path = os.getcwd()
 # Back Image
-bg = 'bg.jpeg'
+# bg = 'bg.jpeg'
+bg = 'bg.png'
 
 
 def convert_bg(card_url):
     # Download front image to local directory
     card_jpg = download_url(card_url)
-    frontImage = Image.open(card_jpg).resize((325, 400))
+    print('Size.........', Image.open(card_jpg).width, Image.open(card_jpg).height)
+    frontImage = Image.open(card_jpg).resize((700, 850))
+    # frontImage = Image.open(card_jpg)
     print('Size...', frontImage.size)
     # Open Background Image
     background = Image.open(bg)
